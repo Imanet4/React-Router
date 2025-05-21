@@ -1,0 +1,25 @@
+/* Import the font in your HTML head */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+/* Footer styling */
+footer.bg-dark {
+  font-family: 'IM Fell English SC', serif;
+  margin-top: 2rem !important; /* smaller than mt-5 */
+  background: linear-gradient(135deg, #1a0b27, #3c1f47); /* match navbar */
+  color: #b9a0ff;
+  text-shadow: 0 0 5px #7b50ff;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+/* Optional: add a subtle glow on the text */
+footer.bg-dark p {
+  margin: 0;
+  animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 5px #b19cd9; }
+  50% { text-shadow: 0 0 12px #d3bcff, 0 0 20px #a07fff; }
+}

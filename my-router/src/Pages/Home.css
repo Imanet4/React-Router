@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+
+.home-section {
+  background: linear-gradient(135deg, #efe1fa, #f3e6ff);
+  padding: 150px 20px;
+  text-align: center;
+  color: #4b0082;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  animation: fadeIn 2s ease-out;
+}
+
+.home-title {
+  font-family:'IM Fell English SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3.5rem;
+  color: #6a0dad;
+  text-shadow: 2px 2px #e0b3ff;
+  margin-bottom: 20px;
+}
+
+.home-tagline {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #8a2be2;
+  margin-bottom: 20px;
+}
+
+.home-description {
+  font-size: 1.1rem;
+  color: #5c1475;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.home-cta {
+  display: inline-block;
+  background-color: #6a0dad;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(106, 13, 173, 0.4);
+}
+
+.home-cta:hover {
+  background-color: #8a2be2;
+  transform: scale(1.05);
+}
+
+/* Floating Sparkles */
+.home-section::before {
+  content: "✨ ✨ ✨ ✨";
+  position: absolute;
+  font-size: 3rem;
+  top: 10%;
+  left: 5%;
+  animation: sparkle 5s infinite linear alternate;
+  color: #e0b3ff;
+  opacity: 0.5;
+}
+
+@keyframes sparkle {
+  0% { transform: translateY(0); opacity: 0.3; }
+  100% { transform: translateY(-20px); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

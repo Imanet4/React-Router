@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+
+.projects-section {
+  background-color: #efe1fa;
+  padding: 100px 20px;
+  color: #4b0082;
+  min-height: 100vh;
+}
+
+.projects-title {
+  font-family: 'Mystery Quest', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.75rem;
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.projects-subtitle {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #8a2be2;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: linear-gradient(145deg, #fff0f5, #f3e6ff);
+  border: 2px solid #d8b4f8;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(106, 13, 173, 0.2);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(138, 43, 226, 0.3);
+}
+
+.project-name {
+  font-size: 1.5rem;
+  color: #6a0dad;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.project-name::after {
+  content: "✨";
+  position: absolute;
+  right: -25px;
+  top: 0;
+  font-size: 1.2rem;
+  animation: twinkle 1.5s infinite alternate ease-in-out;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Sparkle Animation */
+@keyframes twinkle {
+  0% { opacity: 0.2; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.3); }
+}

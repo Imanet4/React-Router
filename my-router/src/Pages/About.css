@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+
+.about-section {
+  background-color: #efe1fa;;
+  padding: 100px 20px;
+  color: #4b0082;
+  min-height: 100vh;
+  position: relative;
+}
+
+.about-title {
+  font-size: 3rem;
+  color: #6a0dad;
+  font-family: 'Mystery Quest', cursive; 
+}
+
+.about-intro {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #8a2be2;
+  margin-bottom: 40px;
+}
+
+.about-blurb {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5c1475;
+}
+
+.about-blurb strong {
+  color: #6a0dad;
+}
+
+.about-quote {
+  margin-top: 50px;
+  font-style: italic;
+  color: #8a2be2;
+  font-size: 1.2rem;
+}

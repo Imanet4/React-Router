@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+.services-section {
+  background-color: #f9f0ff;
+  padding: 100px 20px;
+  color: #4b0082;
+  min-height: 100vh;
+}
+
+.services-title {
+  font-family: 'IM Fell English SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.75rem;
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.services-subtitle {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #8a2be2;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.service-card {
+  background-color: #fff0f5;
+  border: 2px solid #d8b4f8;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(106, 13, 173, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-name {
+  font-size: 1.5rem;
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
